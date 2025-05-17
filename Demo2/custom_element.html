@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Element</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Custom Element</h1>
+    <my-element></my-element>
+    <script>
+        class MyElement extends HTMLElement{
+            constructor() {
+                super();
+                this.innerHTML = "<h2>This is a custom element!</h2>";
+                this.style.color = "red";
+                this.style.textAlign = "center";
+                this.style.fontFamily = "Arial, sans-serif";
+                this.style.fontSize = "18px";
+            }
+        }    
+        customElements.define("my-element", MyElement)
+    </script>
+</body>
+</html>
