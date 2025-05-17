@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        .be::before {
+            color: red;
+            content: 'before';
+            font-size: 20px;
+        }
+        .af::after {
+            color: blue;
+            content: ' after';
+            font-size: 20px;
+        }
+        .fi-line::first-line {
+            color: rgb(16, 160, 28);
+            content: '2. ::first-line';
+            font-size: 20px;
+        }
+        .fi-letter::first-letter {
+            color: rgb(160, 171, 117);
+            content: '2. ::first-line';
+            font-size: 20px;
+        }
+        .sel::selection {
+            background: yellow;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Element</h1>
+    <p class="define">
+        <strong>Định nghĩa: </strong>
+        Pseudo-elements là các phần tử ảo trong CSS, cho phép chúng ta style các phần cụ thể của một phần tử HTML
+        mà không cần thêm thẻ thật vào DOM. Chúng được biểu diễn bằng cú pháp :: (ví dụ: ::before, ::after).
+    </p>
+    <hr>
+    <p class="be"> before </p>
+    <hr>
+    <p class="af"> after </p>
+    <hr>
+    <p class="fi-line">Áp dụng kiểu dáng cho dòng đầu tiên của văn
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima eius similique ullam cumque, nisi earum iusto magni pariatur obcaecati eaque repellat sequi rem cupiditate error voluptatum fuga libero, suscipit quasi inventore laboriosam cum. Perspiciatis assumenda tempora ex non iusto nulla dolor, animi magni est maiores eius, repellendus quisquam quod ut debitis ducimus dolorum recusandae id odio autem labore, quaerat mollitia. Voluptatem ab in repellendus iusto laborum fugiat doloribus nostrum, iste molestias veritatis eligendi exercitationem laudantium! Recusandae inventore vitae dicta dolores, fugit qui doloremque eius libero, culpa voluptatibus tempora nostrum est illo, ipsum esse delectus minima corrupti in debitis! Quia.
+    </p>
+    <hr>
+    <p class="fi-letter">Áp dụng kiểu dáng cho chữ cái đầu tiên của phần tử.</p>
+    <hr>
+    <p class="sel">Boi den em di</p>
+</body>
+
+</html>
